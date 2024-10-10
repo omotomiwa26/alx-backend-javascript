@@ -39,3 +39,7 @@ function printTeacher(firstName: string, lastName: string): string {
 }
 
 printTeacher("John", "Doe")
+
+//Task 4. Writing a class
+
+int
