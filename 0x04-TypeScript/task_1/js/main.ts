@@ -42,4 +42,9 @@ printTeacher("John", "Doe")
 
 //Task 4. Writing a class
 
-int
+interface Class {
+    workOnHomework(): string;
+    displayName(): string;
+}
+
+interface 
