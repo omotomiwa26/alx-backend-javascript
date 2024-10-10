@@ -1,3 +1,4 @@
+// Task 1. Creating a Teacher interface
 interface Teacher {
     readonly firstName: string,
     readonly lastName: string,
@@ -47,4 +48,27 @@ interface Class {
     displayName(): string;
 }
 
-interface 
+interface Constructor {
+    firstName: string;
+    lastName: string;
+}
+
+class StudentClass implements Class {
+    firstName: string;
+    lastName: string;
+
+    constructor(args: Constructor) {
+
+        this.firstName = args.firstName;
+        this.lastName = args.lastName;
+    }
+
+    workOnHomework(): string {
+        return 'Currently working';
+    }
+
+    displayName(): string {
+        return this.firstName;
+    }
+
+}
