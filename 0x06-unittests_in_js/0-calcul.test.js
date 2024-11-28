@@ -29,6 +29,6 @@ describe('calculateNumber', function() {
   });
     it(`checking if number is rounded`, function() {
       const res = calculateNumber(-1.5, 0.1);
-      assert.strictEqual(res, -1.4);
+      assert.strictEqual(res, -1);
   });
-});
+})
